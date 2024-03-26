@@ -22,7 +22,7 @@ const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post("http://localhost:5000/try/register", data)
+    axios.post("https://backend-authentication-4lbl.onrender.com/try/register", data)
     .then(()=>{
         console.log(data);
         alert('Successfully registered!')
