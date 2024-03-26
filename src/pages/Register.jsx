@@ -37,7 +37,7 @@ const navigate = useNavigate();
 
   return (
     <div className="flex justify-center items-center h-screen relative">
-    <video autoPlay loop muted className="fixed inset-0 object-cover w-full h-full z-0">
+    <video autoPlay loop  className="fixed inset-0 object-cover w-full h-full z-0">
       <source src={video} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
