@@ -42,6 +42,7 @@ const navigate = useNavigate();
       Your browser does not support the video tag.
     </video>
     <form onSubmit={handleSubmit} className="shadow-md rounded px-8 pt-6 pb-8 mb-4 w-1/3 bg-indigo-200 bg-opacity-20 z-10">
+      <h1 className='text-white font-bold text-2xl text-center'>Register</h1>
       <div className="mb-4">
         <label className="block text-gray-100 text-sm font-bold mb-2" htmlFor="username">
           Username
