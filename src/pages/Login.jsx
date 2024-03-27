@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import img from "../assets/bg.jpg"
 import {login } from "../Redux/store"
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 
 function Login() {
@@ -51,7 +52,10 @@ const navigate = useNavigate();
       <p>username :123</p>
       <p>password :123</p>
     </div> */}
-      <form onSubmit={handleSubmit} className="rounded px-8 pt-6 pb-8 mb-4 w-1/3 bg-indigo-200 bg-opacity-20">
+    <div>
+      <p className='text-white font-bold mb-2'>Fist CLick Here: <Link className='text-blue-500 underline font-semibold' to="/register">Register</Link></p>
+    </div>
+      <form onSubmit={handleSubmit} className="rounded px-8 pt-6 pb-8 mb-4  w-full sm:w-full md:w-1/2 lg:w-1/3 bg-indigo-200 bg-opacity-20">
         <div className="mb-4 " >
         <h1 className='text-white font-bold text-2xl text-center'>Login</h1>
           <label className="block  text-white text-sm font-bold mb-2" htmlFor="username">
@@ -87,7 +91,7 @@ const navigate = useNavigate();
             Login
           </button>
         </div>
-          <p className='text-center font-bold text-xl text-white'>User Not registerd register first <a href="/register" className='text-blue-200 underline'>register</a></p>
+          <p className='text-center font-bold text-xl text-white'>User Not registerd register first <Link to="/register" className='text-blue-200 underline'>register</Link></p>
       </form>
     </div>
             </>
